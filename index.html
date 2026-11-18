@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>The Chronicles Lite</title>
-<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Chronicles"><meta name="theme-color" content="#0b0e22"><link rel="apple-touch-icon" href="assets/icon-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Chronicles"><meta name="theme-color" content="#0b0e22"><link rel="apple-touch-icon" href="icon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@500;600&family=Press+Start+2P&display=swap">
 <style>
@@ -198,7 +198,7 @@ tbody tr.clickable:hover td{background:var(--sunk);cursor:pointer}
 @keyframes chg{50%{transform:scale(1.06)}}
 .dshell{position:absolute;inset:-16% -5% -4% -5%;z-index:3;pointer-events:none;border-radius:50% 50% 12% 12%/60% 60% 12% 12%}
 .dshell.full{box-shadow:0 0 40px #7CFF9A,inset 0 0 40px rgba(124,255,154,.35)}.dshell.mid{box-shadow:0 0 20px rgba(124,255,154,.5)}
-.dpiece{position:absolute;width:30px;height:34px;margin:-17px 0 0 -15px;background:url(assets/wd-piece.webp) center/contain no-repeat;image-rendering:pixelated;filter:drop-shadow(0 0 6px #7CFF9A);opacity:.95}
+.dpiece{position:absolute;width:30px;height:34px;margin:-17px 0 0 -15px;background:url(wd-piece.webp) center/contain no-repeat;image-rendering:pixelated;filter:drop-shadow(0 0 6px #7CFF9A);opacity:.95}
 .dshell.flash .dpiece{animation:pfl .5s ease-out 2}@keyframes pfl{50%{filter:brightness(2.2) drop-shadow(0 0 12px #fff)}}
 .dshell.crack .dpiece{opacity:.55}
 .dshell.crack1 .dpiece{filter:brightness(.85);opacity:.85}.dshell.crack1 .dpiece:nth-child(3n){opacity:.35}
@@ -210,11 +210,11 @@ tbody tr.clickable:hover td{background:var(--sunk);cursor:pointer}
 .dcount{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);z-index:9;font-family:"Press Start 2P",var(--f-display);font-size:clamp(80px,16vw,200px);color:#fff;text-shadow:0 0 30px #FF2040,0 8px 0 #000;animation:dcn .8s ease-out both;pointer-events:none}
 @keyframes dcn{from{transform:translate(-50%,-50%) scale(2.2);opacity:0}30%{opacity:1}to{transform:translate(-50%,-50%) scale(.9);opacity:.2}}
 .bt-h.guard{transform:translateY(-10px) scale(1.12);z-index:2}.bt-h.guard img{filter:drop-shadow(0 0 10px #7CFF9A) drop-shadow(0 0 22px #7CFF9A)}
-.bt-h.guard::after{content:"";position:absolute;right:-18%;top:28%;width:52%;height:46%;background:url(assets/wd-guard.webp) center/contain no-repeat;filter:drop-shadow(0 0 8px #7CFF9A);z-index:3}
+.bt-h.guard::after{content:"";position:absolute;right:-18%;top:28%;width:52%;height:46%;background:url(wd-guard.webp) center/contain no-repeat;filter:drop-shadow(0 0 8px #7CFF9A);z-index:3}
 .bt-h.deb img{filter:drop-shadow(0 0 8px #C58BFF) grayscale(.5) hue-rotate(220deg) brightness(.85)}
-.bt-h.deb::before{content:"";position:absolute;inset:22% -2% 14%;z-index:3;pointer-events:none;background:url(assets/wd-chains.webp) center/contain no-repeat;filter:drop-shadow(0 0 6px #C58BFF);animation:chain .35s ease-out both}
+.bt-h.deb::before{content:"";position:absolute;inset:22% -2% 14%;z-index:3;pointer-events:none;background:url(wd-chains.webp) center/contain no-repeat;filter:drop-shadow(0 0 6px #C58BFF);animation:chain .35s ease-out both}
 @keyframes chain{from{opacity:0;transform:scale(1.4)}}
-.bt-h.medready::before{content:"";position:absolute;top:-30px;left:50%;width:34px;height:32px;transform:translateX(-50%);background:url(assets/wd-cross.webp) center/contain no-repeat;z-index:4;animation:mrd 1.1s ease-in-out infinite;inset:auto auto auto 50%}
+.bt-h.medready::before{content:"";position:absolute;top:-30px;left:50%;width:34px;height:32px;transform:translateX(-50%);background:url(wd-cross.webp) center/contain no-repeat;z-index:4;animation:mrd 1.1s ease-in-out infinite;inset:auto auto auto 50%}
 @keyframes mrd{50%{transform:translateX(-50%) translateY(-5px) scale(1.1)}}
 .ddome{position:absolute;left:0;right:0;bottom:0;width:100%;height:100%;object-fit:fill;opacity:0;pointer-events:none;transition:opacity .5s;mix-blend-mode:screen;image-rendering:pixelated}
 .dshell.mid .ddome{opacity:.35}.dshell.full .ddome{opacity:.55}.dshell.weak .ddome{opacity:.18}
@@ -350,7 +350,7 @@ tbody tr.clickable:hover td{background:rgba(61,224,255,.06)}
 
 /* Boss arena */
 .boss.arena{position:relative;border-radius:10px;border-color:rgba(255,61,110,.35);overflow:hidden;
-  background:radial-gradient(60% 70% at 50% 45%,rgba(255,61,203,.22),transparent 70%),linear-gradient(180deg,rgba(7,10,28,.78),rgba(7,10,28,.95)),url("assets/banner.webp") center 30%/cover no-repeat}
+  background:radial-gradient(60% 70% at 50% 45%,rgba(255,61,203,.22),transparent 70%),linear-gradient(180deg,rgba(7,10,28,.78),rgba(7,10,28,.95)),url("banner.webp") center 30%/cover no-repeat}
 .arena-floor{position:absolute;left:-20%;right:-20%;bottom:0;height:46%;pointer-events:none;opacity:.55;
   background:repeating-linear-gradient(90deg,rgba(61,224,255,.35) 0 1px,transparent 1px 60px),repeating-linear-gradient(0deg,rgba(61,224,255,.35) 0 1px,transparent 1px 34px);
   transform:perspective(320px) rotateX(62deg);transform-origin:bottom;-webkit-mask-image:linear-gradient(0deg,#000,transparent);mask-image:linear-gradient(0deg,#000,transparent)}
@@ -426,7 +426,7 @@ body.proj .hp{height:34px}
 @media (max-width:600px){.hpwrap{grid-template-columns:1fr;padding:6px 16px}.hp-tag{display:none}.hp-meta{grid-column:1}}
 @media (prefers-reduced-motion:reduce){.sprite .body,.sprite .glitch,.sparks i,.sprite .shadow,.sprite .aura,.hp .fill,.hp .fill::after,.xpbar i::after,body::after{animation:none!important}}
 
-.hero{position:relative;border-radius:16px;overflow:hidden;min-height:210px;display:flex;align-items:flex-end;background:#1E2A4A url("assets/banner.webp") center 35%/cover no-repeat;box-shadow:var(--shadow);color:#fff}
+.hero{position:relative;border-radius:16px;overflow:hidden;min-height:210px;display:flex;align-items:flex-end;background:#1E2A4A url("banner.webp") center 35%/cover no-repeat;box-shadow:var(--shadow);color:#fff}
 .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,18,40,.88) 0%,rgba(14,18,40,.55) 38%,rgba(14,18,40,0) 70%),linear-gradient(0deg,rgba(14,18,40,.6),rgba(14,18,40,0) 55%)}
 .hero-in{position:relative;padding:22px 24px;display:flex;flex-direction:column;gap:4px;max-width:520px}
 .hero-k{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#F0B44A;font-weight:700}
@@ -440,7 +440,7 @@ body.proj .hero{min-height:150px}
 .boss.defeated .boss-art{filter:grayscale(1) brightness(.8);border-color:var(--muted)}
 body.proj .boss-art{width:130px;height:130px}
 .chip img{width:18px;height:18px;margin-left:-6px}
-.coin::before{width:18px;height:18px;border-radius:0;background:url("assets/coin.webp") center/contain no-repeat;box-shadow:none}
+.coin::before{width:18px;height:18px;border-radius:0;background:url("coin.webp") center/contain no-repeat;box-shadow:none}
 .stat .ic{width:22px;height:22px;vertical-align:-4px;margin-right:6px}
 .lvl-top b{display:inline-flex;align-items:center;gap:4px}
 .lvl-top b img{width:18px;height:18px}
@@ -1139,7 +1139,7 @@ const CAMPAIGN = [
   {k:"wisps",name:"Fog Wisps",mini:true,sentBy:"The Forgetting Fog",story:"The last bits of fog, trying to make you forget."},
   {k:"null",name:"NULL",title:"the Unwriter",reward:400,story:"The final boss. NULL wants to erase the Great Library forever."}
 ];const isMini = k => !!(CAMPAIGN.find(x=>x.k===k)||{}).mini && k!=="fuzzbyte";
-const artOf = k => { const p = k==="fuzzbyte"?"fz":k, f = x=>`assets/${p}-${x}.webp`;
+const artOf = k => { const p = k==="fuzzbyte"?"fz":k, f = x=>`${p}-${x}.webp`;
   if(isMini(k)) return {idle:f("idle"),blink:f("blink"),roar:f("idle"),hurt:f("hurt"),ko:f("ko"),down:f("ko"),downFrames:[f("ko")]};
   const a = {idle:f("idle"),blink:f("blink"),roar:f("roar"),hurt:f("hurt"),ko:f("ko"),down:f("down0"),downFrames:[0,1,2,3].map(i=>f("down"+i))};
   if(k!=="fuzzbyte"){ a.fall=f("fall"); a.slam=f("slam"); } return a; };
@@ -1147,20 +1147,20 @@ const campOf = k => CAMPAIGN.find(x=>x.k===k) || CAMPAIGN[0];
 const rewardOf = k => { const c=campOf(k); return c.reward||(c.mini?50:BOSS_REWARD); };
 const HEROES = Array.from({length:60},(_,i)=>"hero"+String(i).padStart(2,"0"));
 const isH2 = id => +String(id).replace(/\D/g,"")>=30;
-const heroImg = id => isH2(id)?`assets/h2/${id}.png`:`assets/${id}.png`;
-const faceImg = id => `assets/${isH2(id)?"h2/":""}${String(id).replace("hero","face")}.png`;
+const heroImg = id => isH2(id)?`${id}.png`:`${id}.png`;
+const faceImg = id => `${isH2(id)?"":""}${String(id).replace("hero","face")}.png`;
 const SQUADS = ["Medic","Soldier","Engineer"];
 const SQ = {
-  Medic:{cut:"assets/cut-medic.webp",shot:"assets/atk-orb.webp",hit:"assets/atk-heal.webp",title:"MEDICS",verb:"LIFE BLAST!",color:"var(--medic)",icon:"assets/medic.webp"},
-  Soldier:{cut:"assets/cut-soldier.webp",shot:"assets/atk-quill.webp",hit:"assets/atk-slash.webp",title:"SOLDIERS",verb:"QUILL STRIKE!",color:"var(--soldier)",icon:"assets/soldier.webp"},
-  Engineer:{cut:"assets/cut-engineer.webp",shot:"assets/atk-gear.webp",hit:"assets/atk-zap.webp",title:"ENGINEERS",verb:"GEAR STORM!",color:"var(--engineer)",icon:"assets/engineer.webp"}};
+  Medic:{cut:"cut-medic.webp",shot:"atk-orb.webp",hit:"atk-heal.webp",title:"MEDICS",verb:"LIFE BLAST!",color:"var(--medic)",icon:"medic.webp"},
+  Soldier:{cut:"cut-soldier.webp",shot:"atk-quill.webp",hit:"atk-slash.webp",title:"SOLDIERS",verb:"QUILL STRIKE!",color:"var(--soldier)",icon:"soldier.webp"},
+  Engineer:{cut:"cut-engineer.webp",shot:"atk-gear.webp",hit:"atk-zap.webp",title:"ENGINEERS",verb:"GEAR STORM!",color:"var(--engineer)",icon:"engineer.webp"}};
 const HERO_CLASS = "EMSEEMSEESMEEMMSSEEMMSEEEMSEME"+"MESMESMESMESMESMES"+"MESMESEMSEMS"; // emblem of hero00…hero59
 const heroesOf = sq => HEROES.filter((h,i)=>HERO_CLASS[i]===String(sq||"M")[0]);
 function ensureSquads(g){ const cnt={Medic:0,Soldier:0,Engineer:0}; for(const s of g.students) if(SQ[s.squad]) cnt[s.squad]++;
   const need=g.students.filter(s=>!SQ[s.squad]); for(let i=need.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [need[i],need[j]]=[need[j],need[i]]; }
   for(const s of need){ const sq=SQUADS.slice().sort((a,b)=>cnt[a]-cnt[b]||Math.random()-.5)[0]; s.squad=sq; cnt[sq]++; } }
-const FX = {cut:"assets/cut-recruit.webp",shot:"assets/atk-star.webp",hit:"assets/atk-starburst.webp",color:"var(--gold)"};
-const FX2 = {confetti:[0,1,2,3].map(i=>`assets/fx2-confetti${i}.webp`),lvl:[0,1,2,3].map(i=>`assets/fx2-lvl${i}.webp`)};
+const FX = {cut:"cut-recruit.webp",shot:"atk-star.webp",hit:"atk-starburst.webp",color:"var(--gold)"};
+const FX2 = {confetti:[0,1,2,3].map(i=>`fx2-confetti${i}.webp`),lvl:[0,1,2,3].map(i=>`fx2-lvl${i}.webp`)};
 const WHISPERS = ["i can hear every word you read.","keep reading. it won't matter.","the last page is always blank.","louder. read louder. i'm listening.","how many words until you get tired?","i was here before the first book.","one day, every story ends."];
 
 /* ───────── Helpers ───────── */
@@ -1476,7 +1476,7 @@ const guessGrade = name => { const m=String(name).match(/([4-6])\d/); return m?+
 function setupHTML0(){
   return `<section class="boss arena" style="min-height:70vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:14px">
     <div class="arena-floor"></div>
-    <img src="assets/por-arch0.webp" alt="" style="width:min(280px,50vw);filter:brightness(0) drop-shadow(0 0 22px rgba(255,214,120,.55));position:relative">
+    <img src="por-arch0.webp" alt="" style="width:min(280px,50vw);filter:brightness(0) drop-shadow(0 0 22px rgba(255,214,120,.55));position:relative">
     <div class="boss-name" style="position:relative">THE CHRONICLES</div>
     <div class="boss-title" style="position:relative">Write your group's name to begin</div>
     <div class="row" style="position:relative;justify-content:center"><input class="in" id="setupName" placeholder="e.g. Salón 41" style="font-size:20px;min-width:240px;text-align:center" autocomplete="off"><button class="btn boss-btn" data-act="setup">Begin ▸</button></div>
@@ -1513,7 +1513,7 @@ function bossHTML(R){
   if(!R.g.students.length) return `<section class="boss arena" aria-label="Waiting for the first quizzes" style="text-align:center">
     <div class="arena-floor"></div>
     <div class="arena-top"><div class="boss-tag">The Great Library</div><div class="boss-name">???</div><div class="boss-title">Something is coming…</div></div>
-    <div class="arena-stage" style="display:flex;justify-content:center"><img src="assets/por-arch0.webp" alt="The Archivist's silhouette" style="width:min(300px,55vw);filter:brightness(0) drop-shadow(0 0 22px rgba(255,214,120,.5));position:relative"></div>
+    <div class="arena-stage" style="display:flex;justify-content:center"><img src="por-arch0.webp" alt="The Archivist's silhouette" style="width:min(300px,55vw);filter:brightness(0) drop-shadow(0 0 22px rgba(255,214,120,.5));position:relative"></div>
     <div class="boss-story" style="position:relative">Import ${esc(R.g.name)}'s first Literacy Pro quizzes to summon the first monster.</div>
     <div class="row" style="justify-content:center;position:relative;margin-top:10px"><button class="btn boss-btn" data-act="view" data-id="import">Import quizzes ▸</button><button class="btn" data-act="intro">Hear the story again</button></div></section>`;
   const CB=campOf(b.camp), art=artOf(b.camp), idx=CAMPAIGN.findIndex(x=>x.k===b.camp);
@@ -1544,12 +1544,12 @@ function bossHTML(R){
 function attackBarHTML(R){
   if(!R.pend) return `<div class="attackbar"><span class="ready-none">No new words since the last hit. Import this week's quizzes to charge the next one.</span></div>`;
   const n=Object.keys(R.pendBy).length;
-  return `<div class="attackbar"><button type="button" class="btn attack-btn" data-act="battle">⚔ HIT ${esc(campOf(R.boss.camp).name).toUpperCase()}! ${fmt(R.pend)} dmg</button><div class="ready"><span><img src="assets/rank.webp" alt="">${n} recruit${n===1?"":"s"} ready</span></div></div>`;
+  return `<div class="attackbar"><button type="button" class="btn attack-btn" data-act="battle">⚔ HIT ${esc(campOf(R.boss.camp).name).toUpperCase()}! ${fmt(R.pend)} dmg</button><div class="ready"><span><img src="rank.webp" alt="">${n} recruit${n===1?"":"s"} ready</span></div></div>`;
 }
 function faceHTML(s){ return `<span class="face"><img src="${faceImg(s.avatar)}" alt="" draggable="false"></span>`; }
 function lvCell(s){
   const span=s.L.next?s.L.next-s.L.floor:1, have=Math.max(0,s.exp-s.L.floor), pct=s.L.next?Math.max(0,Math.min(100,have/span*100)):100;
-  return `<div class="lvc"><div class="lvc-top"><b>${s.L.lv>=3?`<img src="assets/rank.webp" alt="">`:""}Lv ${s.L.lv}</b><span>${esc(s.L.rank)}</span><em>${Math.floor(pct)}%</em></div>
+  return `<div class="lvc"><div class="lvc-top"><b>${s.L.lv>=3?`<img src="rank.webp" alt="">`:""}Lv ${s.L.lv}</b><span>${esc(s.L.rank)}</span><em>${Math.floor(pct)}%</em></div>
     <div class="xpbar big" role="meter" aria-valuemin="0" aria-valuemax="${span}" aria-valuenow="${have}"><i style="width:${pct.toFixed(1)}%"></i></div>
     <small>${s.L.next?`${fmt(s.L.next-s.exp)} EXP to ${esc(s.L.nextRank)}`:"Max level"}</small></div>`;
 }
@@ -1659,7 +1659,7 @@ function chapterTitle(k){ return (STORY[k]||{}).title||campOf(k).name; }
 function storyHTML(R){
   const beaten=new Set(R.beaten.map(b=>b.camp));
   return `<div class="panel"><h3 style="margin:0 0 6px;font-family:var(--f-display)">The story so far</h3><p class="muted" style="margin:0 0 12px">A new chapter unlocks every time ${esc(R.g.name)} defeats a boss. Play them on the projector.</p><div class="row" style="margin:0 0 12px"><button class="btn primary" data-act="restartstory">⟲ Restart the story</button><span class="muted" style="font-size:13px">Shows the Archivist intro again and plays the prologue. Progress and bosses stay as they are.</span></div>
-  <div style="display:grid;gap:8px">${STORY_KEYS.map(k=>{ const open=k==="prologue"||beaten.has(k); const img=k==="prologue"?"assets/por-arch0.webp":artOf(k).idle;
+  <div style="display:grid;gap:8px">${STORY_KEYS.map(k=>{ const open=k==="prologue"||beaten.has(k); const img=k==="prologue"?"por-arch0.webp":artOf(k).idle;
     return `<div class="row" style="justify-content:space-between;border:1px solid var(--line);border-radius:10px;padding:8px 12px;${open?"":"opacity:.45"}"><span class="row"><img src="${img}" alt="" style="width:44px;height:44px;object-fit:contain;${open?"":"filter:brightness(0)"}"><b style="font-family:var(--f-display)">${open?esc(chapterTitle(k)):"Locked · defeat "+esc(campOf(k).name)}</b></span>${open?`<button class="btn small primary" data-act="${k==="prologue"?"intro":"chapter"}" data-id="${k}">Play</button>`:""}</div>`; }).join("")}</div></div>`;
 }
 function guiaHTML(){
@@ -1946,7 +1946,7 @@ function showIntro(){
   if(B.on||document.querySelector(".intro-splash")) return; B.on=true;
   const el=document.createElement("div"); el.className="intro-splash"; el.setAttribute("role","dialog"); el.setAttribute("aria-modal","true"); el.setAttribute("aria-label","We need your help");
   el.style.cssText="position:fixed;inset:0;z-index:60;background:#000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:24px;text-align:center;cursor:pointer";
-  el.innerHTML=`<img class="intro-arch" src="assets/por-arch0.webp" alt="The Archivist" style="width:min(320px,52vw);filter:drop-shadow(0 0 40px rgba(255,200,90,.25));opacity:0">
+  el.innerHTML=`<img class="intro-arch" src="por-arch0.webp" alt="The Archivist" style="width:min(320px,52vw);filter:drop-shadow(0 0 40px rgba(255,200,90,.25));opacity:0">
     <div class="intro-sign" style="font-family:'Press Start 2P',var(--f-display);font-size:clamp(20px,4.4vw,46px);color:#FFE38A;letter-spacing:.04em;line-height:1.3;text-shadow:0 0 18px rgba(255,200,60,.6),0 4px 0 #6b3b00;opacity:0">WE NEED<br>YOUR HELP!</div>
     <div class="intro-sub" style="color:#c9c3b0;font-size:clamp(15px,2vw,20px);opacity:0">The Great Library is in danger. ${esc(G().name)}, will you listen?</div>
     <button type="button" class="btn boss-btn intro-go" style="opacity:0;font-size:18px;padding:12px 26px">▶ Tap to hear the story</button>`;
@@ -1969,7 +1969,7 @@ function bossIntro(k){
 /* ───────── Story scenes (Command's dialogue player, no branching) ───────── */
 function pxURI(map,pal){ let r=""; map.forEach((row,y)=>[...row].forEach((ch,x)=>{ if(pal[ch]) r+=`<rect x="${x}" y="${y}" width="1.03" height="1.03" fill="${pal[ch]}"/>`; })); return "data:image/svg+xml,"+encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" shape-rendering="crispEdges">${r}</svg>`); }
 const MAP_NULL=["......cccc......","....cccccccc....","...cccbbbbccc...","..ccbbbbbbbbcc..","..cbbbbbbbbbbc..","..cbbrRbbrRbbc..","..cbbbbbbbbbbc..","..ccbbbbbbbbcc..","...cbbbbbbbbc...","..ccbbbbbbbbcc..",".cccbbbbbbbbccc.",".ccbbbbbbbbbbcc.","ccbbbbbbbbbbbbcc","cbbbbbbbbbbbbbbc","cbbb.bbbb.bbbbbc","c.b.b..b.b..b.bc"];
-const POR_FR={null:["assets/por-null0.webp","assets/por-null1.webp","assets/por-null2.webp"],arch:["assets/por-arch0.webp","assets/por-arch1.webp"]};
+const POR_FR={null:["por-null0.webp","por-null1.webp","por-null2.webp"],arch:["por-arch0.webp","por-arch1.webp"]};
 const POR={null:POR_FR.null[0],arch:POR_FR.arch[0],voice:pxURI(MAP_NULL,{r:"#FF3D6E",R:"#ffffff"})};
 const spName=(sp,k)=>sp==="arch"?"THE ARCHIVIST":sp==="null"?"NULL":sp==="voice"?"???":(campOf(sp==="boss"?k:sp).name||"???").toUpperCase();
 function spPortrait(sp,k,f){ if(POR[sp]) return POR[sp]; const a=artOf(sp==="boss"?k:sp); return a[f]||a.idle; }
